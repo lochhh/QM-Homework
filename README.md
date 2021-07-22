@@ -2,45 +2,71 @@
 
 This is a Jupyter Notebook project.
 
-## To run the code
+## Contents
+1. [Run the code](#1-run-the-code)
+2. [Stop Jupyter Notebook](#2-stop-jupyter-notebook)
+3. [Export notebook as presentation slides](#3-export-notebook-as-presentation-slides)
+4. [Deactivate virtual environment](#4-deactivate-virtual-environment)
+5. [Remove virtual environment](#5-remove-virtual-environment)
+6. [Uninstall kernel](#6-uninstall-kernel)
 
-0. Make sure that 'anonymized_project.json' and 'references.json' are in the project directory.
 
+## 1. Run the code
+
+**Make sure that 'anonymized_project.json' and 'references.json' are in the project directory before taking the following steps.**
 1. `cd` to the project directory.
-
 2. Create and activate virtual environment:
-`python3 -m venv <my_env_name>`
-`source <my_env_name>/bin/activate`
 
-2. Install requirements in the current environment:
-`pip3 install -r requirements.txt`
+```bash
+python3 -m venv <my_env_name>
+source <my_env_name>/bin/activate
+```
+3. Install requirements in the current environment:
 
-3. Add current environment to Jupyter:
-`python3 -m ipykernel install --user --name=<my_env_name>`
+```bash
+pip3 install -r requirements.txt
+```
+4. Add current environment to Jupyter:
 
-4. Launch Jupyter Notebook:
-`jupyter-notebook`
+```bash
+python3 -m ipykernel install --user --name=<my_env_name>
+```
+5. Launch Jupyter Notebook:
 
-5. Open QM-Homework.ipynb and change kernel to `<my_env_name>`.
+```bash
+jupyter-notebook
+```
+6. Open QM-Homework.ipynb and change kernel to `<my_env_name>`.
+7. Click on 'kernel' and 'run all'.
 
-6. Click on 'kernel' and 'run all'.
 
-## To stop Jupyter Notebook
+## 2. Stop Jupyter Notebook
 
-`Ctrl + C`
+```bash
+Ctrl + C
+```
 
-## To export notebook as presentation slides and launch the slides
 
-`jupyter nbconvert QM-Homework.ipynb --to slides --TemplateExporter.exclude_input=True --post serve`
+## 3. Export notebook as presentation slides
 
-## To deactivate virtual environment
+```bash
+jupyter nbconvert QM-Homework.ipynb --to slides --TemplateExporter.exclude_input=True --post serve
+```
 
-`deactivate`
+## 4. Deactivate virtual environment
 
-## To remove virtual environment 
+```bash
+deactivate
+```
 
-`sudo rm -rf <my_env_name>`
+## 5. Remove virtual environment 
 
-## To uninstall kernel
+```bash
+sudo rm -rf <my_env_name>
+````
 
-`jupyter kernelspec uninstall <my_env_name>`
+## 6. Uninstall kernel
+
+```bash
+jupyter kernelspec uninstall <my_env_name>
+```
