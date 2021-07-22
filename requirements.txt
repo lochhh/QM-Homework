@@ -1,0 +1,11 @@
+# stats
+pandas
+numpy
+matplotlib
+scipy
+
+# jupyter
+ipykernel
+jupyter
+RISE
+jupyter_contrib_nbextensions
