@@ -1,0 +1,5 @@
+# data files
+.json
+
+# jupyter checkpoints
+.ipynb_checkpoints
